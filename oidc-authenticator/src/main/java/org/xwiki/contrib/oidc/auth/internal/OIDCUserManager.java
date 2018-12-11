@@ -538,6 +538,7 @@ public class OIDCUserManager
         putVariable(map, "oidc.user.mail", userInfo.getEmailAddress() == null ? "" : userInfo.getEmailAddress());
         putVariable(map, "oidc.user.familyName", userInfo.getFamilyName());
         putVariable(map, "oidc.user.givenName", userInfo.getGivenName());
+        putVariable(map, "oidc.user.preferredUsername", userInfo.getPreferredUsername());
 
         // Provider (only XWiki OIDC providers)
         URL providerURL = this.configuration.getXWikiProvider();
